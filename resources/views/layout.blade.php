@@ -29,11 +29,9 @@
         <div class="row">
             <div class="col-9 content">
                 @yield('content')
-                <div style="height: 500px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quia. Impedit ratione temporibus nam, nobis adipisci odit facere voluptate corrupti pariatur, qui animi consequatur ipsam exercitationem molestias libero optio dolorum?</div>
             </div>
-            <aside class="col-3">
+            <aside class="col-3 py-3">
                 Aside content
-                <div style="height: 500px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, suscipit perferendis repellendus modi amet ullam? Minima dolores optio commodi. Facere veritatis eius doloribus commodi in ab aut id ad provident?</div>
             </aside>
         </div>
     </div>
