@@ -1,0 +1,31 @@
+body {
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        color: $yellow;
+    }
+}
+
+nav {
+    background-color: $blue;
+    a {
+        padding: 15px 10px;
+        display: inline-block;
+    }
+}
+
+header {
+    height: 500px;
+    font-size: 72px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+    background: url(/images/bg.jpeg) 50% 30% / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
