@@ -23,7 +23,7 @@ class NewsFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(),
-            'url' => $this->faker->slug(),
+            'slug' => $this->faker->slug(),
             'short_text' => $this->faker->paragraph(),
             'full_text' => $this->faker->text(),
             'seo_title' => $this->faker->sentence(),

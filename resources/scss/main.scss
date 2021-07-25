@@ -11,11 +11,22 @@ a {
     }
 }
 
-nav {
+.navbar {
     background-color: $blue;
     a {
-        padding: 15px 10px;
-        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            color: $yellow;
+        }
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 }
 
@@ -34,4 +45,18 @@ header {
     padding: 15px;
     margin: 15px 0;
     background-color: #222;
+}
+
+.page-link {
+    color: $yellow;
+    border-color: transparent !important;
+    background-color: #222 !important;
+    &:hover,
+    &:focus {
+        color: $yellow;
+        background-color: #333 !important;
+    }
+    &:focus {
+        box-shadow: none;
+    }
 }

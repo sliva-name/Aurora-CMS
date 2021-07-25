@@ -8,8 +8,14 @@ class MainController extends Controller
 {
     public function index()
     {
-        $news = News::all();
+        $news = News::paginate(5);
 
-        return view('index', compact('news'));
+        $seo = [
+            "title" =>  '',
+            "description" => '',
+            "keywords" => ''
+        ];
+
+        return view('index', compact('news', 'seo'));
     }
 }

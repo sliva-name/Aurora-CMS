@@ -4,11 +4,11 @@
 
 @foreach ($news as $item)
 <div class="news-card">
-    <h4>{{ $item->title }}</h4>
-    <p>{{ $item->short_text }}</p>
-    {{-- Я знаю что можно через router, но мне пох, я хочу спать, так что потом поменяю --}}
-    <a href="/news/{{ $item->slug }}">Подробнее</a>
+    <h3>{{ $item->title }}</h3>
+    <p class="my-4">{{ $item->short_text }}</p>
+    <a href="{{ route('news.view',  $item->slug) }}">Подробнее</a>
 </div>
 @endforeach
+{{ $news->links('vendor.pagination.bootstrap-5') }}
 
 @endsection
